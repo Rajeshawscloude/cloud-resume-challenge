@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh — Cloud Engineer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #232f3e, #ff9900);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .visitor-counter {
+            background: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #232f3e;
+            border-bottom: 3px solid #ff9900;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info span {
+            background: #f0f4f8;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .certification {
+            background: linear-gradient(135deg, #232f3e, #37475a);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .certification h3 {
+            color: #ff9900;
+            margin-bottom: 5px;
+        }
+
+        .project {
+            border-left: 4px solid #ff9900;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .project h3 {
+            color: #232f3e;
+            margin-bottom: 8px;
+        }
+
+        .project ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project ul li::before {
+            content: "✅ ";
+        }
+
+        .project ul li {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #232f3e;
+            color: #ff9900;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .aws-badge {
+            display: inline-block;
+            background: #ff9900;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin: 3px;
+        }
+
+        footer {
+            background: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Rajesh</h1>
+        <p>AWS Certified Cloud Practitioner | Cloud Engineer</p>
+        <p>📍 India | 📧 davidrajesh00@gmail.com | 
+           🔗 LinkedIn | 🐙 GitHub</p>
+    </div>
+
+    <!-- Visitor Counter -->
+    <div class="visitor-counter">
+        👀 You are visitor number: 
+        <span id="visitor-count">Loading...</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- About -->
+        <div class="section">
+            <h2>👨‍💻 About Me</h2>
+            <p>
+                Passionate Cloud Engineer with AWS Certified Cloud 
+                Practitioner certification. Experienced in designing 
+                and deploying scalable, highly available cloud 
+                architectures on AWS. Skilled in VPC networking, 
+                EC2, RDS, Load Balancing, Auto Scaling, and 
+                serverless technologies.
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="section">
+            <h2>📞 Contact</h2>
+            <div class="contact-info">
+                <span>📧 davidrajesh00@gmail.com</span>
+                <span>📱 +91 959749487</span>
+                <span>🔗 LinkedIn Profile</span>
+                <span>🐙 GitHub Profile</span>
+                <span>📍 India</span>
+            </div>
+        </div>
+
+        <!-- Certification -->
+        <div class="section">
+            <h2>🏆 Certifications</h2>
+            <div class="certification">
+                <h3>AWS Certified Cloud Practitioner (CLF-C02)</h3>
+                <p>Amazon Web Services | 2024</p>
+                <p>Validates foundational AWS Cloud knowledge 
+                   including core services, security, and 
+                   cloud concepts.</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h2>🚀 Projects</h2>
+
+            <div class="project">
+                <h3>AWS 3-Tier Web Architecture</h3>
+                <ul>
+                    <li>Built custom VPC with 6 subnets 
+                        across 2 Availability Zones</li>
+                    <li>Deployed Web Tier with EC2, 
+                        Nginx and React.js</li>
+                    <li>Configured App Tier with 
+                        Node.js on Port 4000</li>
+                    <li>Set up RDS MySQL in private 
+                        subnet for security</li>
+                    <li>Implemented Auto Scaling Groups 
+                        with ALB for high availability</li>
+                    <li>Used SSM Session Manager 
+                        for secure access</li>
+                </ul>
+                <br>
+                <span class="aws-badge">VPC</span>
+                <span class="aws-badge">EC2</span>
+                <span class="aws-badge">RDS</span>
+                <span class="aws-badge">ALB</span>
+                <span class="aws-badge">Auto Scaling</span>
+                <span class="aws-badge">S3</span>
+                <span class="aws-badge">IAM</span>
+            </div>
+
+            <div class="project">
+                <h3>Cloud Resume Challenge</h3>
+                <ul>
+                    <li>Hosted resume website on S3 
+                        with CloudFront CDN</li>
+                    <li>Built serverless visitor counter 
+                        using Lambda and DynamoDB</li>
+                    <li>Created REST API using 
+                        API Gateway</li>
+                    <li>Implemented Infrastructure 
+                        as Code</li>
+                </ul>
+                <br>
+                <span class="aws-badge">S3</span>
+                <span class="aws-badge">CloudFront</span>
+                <span class="aws-badge">Lambda</span>
+                <span class="aws-badge">DynamoDB</span>
+                <span class="aws-badge">API Gateway</span>
+            </div>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>🛠️ Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">AWS VPC</div>
+                <div class="skill-item">EC2</div>
+                <div class="skill-item">S3</div>
+                <div class="skill-item">RDS MySQL</div>
+                <div class="skill-item">Lambda</div>
+                <div class="skill-item">DynamoDB</div>
+                <div class="skill-item">CloudFront</div>
+                <div class="skill-item">API Gateway</div>
+                <div class="skill-item">Auto Scaling</div>
+                <div class="skill-item">IAM</div>
+                <div class="skill-item">Nginx</div>
+                <div class="skill-item">Linux</div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2>🎓 Education</h2>
+            <p><strong>BE.AERONAUTICAL ENGINEERING</strong></p>
+            <p>PAAVAI ENGINEERING COLLEGE| Year</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Built with ❤️ using AWS | 
+           Hosted on S3 + CloudFront</p>
+    </footer>
+
+</div>
+
+<!-- Visitor Counter JavaScript -->
+<script>
+    fetch('https://d489sgfwq6.execute-api.us-east-1.amazonaws.com/visitor')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('visitor-count')
+                .textContent = data.count;
+        })
+        .catch(error => {
+            document.getElementById('visitor-count')
+                .textContent = '1';
+        });
+</script>
+
+</body>
+</html>
